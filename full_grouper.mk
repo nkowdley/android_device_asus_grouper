@@ -30,3 +30,11 @@ PRODUCT_NAME := full_grouper
 PRODUCT_DEVICE := grouper
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on Grouper
+#Begin Changes for Shiny
+PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRODUCT_NAME=nakasi \
+  	BUILD_ID=KRT16M  \
+  	BUILD_DISPLAY_ID=KRT16M \
+	BUILD_FINGERPRINT="google/nakasi/grouper:4.4/KRT16M/893803:user/release-keys" \
+	PRIVATE_BUILD_DESC="nakasi-user 4.4 KRT16M 893803 release-keys"
